@@ -3,14 +3,6 @@
     "name": "Rocket Communications",
     "email": "uxsupport@rocketcom.com"
   },
-  "dependencies": {
-    "@webcomponents/webcomponentsjs": "^2.2.10"
-  },
-  "peerDependencies": {
-    "@astrouxds/rux-icon": "^4.0.3",
-    "@astroxuds/rux-assets": "^1.0.0",
-    "lit-element": "^2.1.0"
-  },
   "homepage": "https://www.astrouxds.com",
   "bugs": {
     "email": "uxsupport@rocketcom.com",
@@ -20,17 +12,14 @@
     "type": "git",
     "url": "https://github.com/RocketCommunicationsInc/astro-components/src/master"
   },
-  "description": "Astro Web Component for buttons",
+  "description": "Design Tokens and Static Assets (CSS, Fonts, Icons, Favicon) for Astro",
   "license": "SEE LICENSE IN LICENSE.md",
-  "main": "rux-button.js",
-  "module": "rux-button.js",
-  "name": "@astrouxds/rux-button",
+  "name": "@astrouxds/rux-assets",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
     "access": "public"
   },
-  "version": "4.1.2",
-  "gitHead": "4bba0d8002ae689eae718e188328d4e564aa94b0"
+  "version": "4.0.3"
 }
