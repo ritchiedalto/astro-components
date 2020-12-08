@@ -366,7 +366,7 @@
     ==========================================================================
 	*/
 	
-	/* Astro 5 Simplified Color Palette */
+	/* KM Light Palette Colors */
 	--backgroundColor: #eaeef4;
 	--defaultText: #292A2D;
 	--secondaryText: #51555B;
@@ -421,7 +421,7 @@
     0 3px 14px 3px rgba(0, 0, 0, 0.12), 0 4px 5px rgba(0, 0, 0, 0.2);
 
   /* Button Active State */
-  --buttonActiveControlTextColor: var(--defaultText);
+  --buttonActiveControlTextColor: var(--colorWhite);
   --buttonActiveBackgroundColor: var(--primary);
   --buttonActiveBorderColor: var(--primary);
 
@@ -445,20 +445,19 @@
     For checkboxes, radio buttons etc …
 
   */
-  --controlTextColor: var(--primary);
-  --controlLabelColor: var(--defaultText);
-  --controlBackgroundColor: var(--primary);
+  --controlTextColor: var(--colorWhite);
+  --controlLabelColor: var(--colorBlack);
+  --controlBackgroundColor: var(--colorSecondaryDarken1);
   --controlBorderColor: var(--primary);
-  --controlAccentColor: var(--primary);
+  --controlAccentColor: var(--colorSecondary);
 
-  --controlSelectedTextColor: var(--defaultText);
-  --controlSelectedBackgroundColor: transparent;
+  --controlSelectedTextColor: var(--colorBlack);
+  --controlSelectedBackgroundColor: var(--colorSecondaryDarken1);
   --controlSelectedBorderColor: var(--primary);
 
-	--controlHoverOutlineBackgroundColor: none;
-	--controlHoverBorderColor: var(--primaryDark);
+  --controlHoverOutlineBackgroundColor: none;
   --controlSelectedOutlineBorderColor: var(--primary);
-  --controlSelectedOutlineBackgroundColor: none;
+  --controlSelectedOutlineBackgroundColor: var(--colorSecondaryDarken1);
 
   /* 
     
@@ -478,17 +477,17 @@
     ==========================================================================
 
   */
-  --popupMenuBackgroundColor: var(--inputBackground);
-  --popupMenuBorderColor: var(--primary);
-  --popupMenuTextColor: var(--defaultText);
+  --popupMenuBackgroundColor: var(--colorWhite);
+  --popupMenuBorderColor: var(--colorSecondary);
+  --popupMenuTextColor: var(--colorBlack);
 
-  --popupCaretBackgroundColor: var(--primary);
+  --popupCaretBackgroundColor: var(--popupMenuBorderColor);
 
-  --popupMenuItemBackgroundColor: var(--inputBackground);
-  --popupMenuItemHoverBackgroundColor: var(--primaryDark);
-  --popupMenuItemHoverTextColor: var(--primaryElementText);
+  --popupMenuItemBackgroundColor: var(--primary);
+  --popupMenuItemHoverBackgroundColor: var(--colorSecondaryLighten3);
+  --popupMenuItemHoverTextColor: var(--colorBlack);
 
-  --popupMenuItemSeperatorBorderColor: var(--defaultText);
+  --popupMenuItemSeperatorBorderColor: var(--colorQuaternaryDarken2);
 
   /* 
     
@@ -516,17 +515,19 @@
 
   */
   --segmentedButtonBorderColor: var(--primary);
-  --segmentedButtonBackgroundColor: none;
+  --segmentedButtonBackgroundColor: var(--colorWhite);
   --segmentedButtonTextColor: var(--primary);
 
-	/* Segmented Hover */
-  --segmentedButtonHoverBackgroundColor: var(--primaryDark);
-	--segmentedButtonHoverTextColor: var(--primaryElementText);
-	--segmentedButtonHoverBorderColor: var(--primaryDark);
+  --segmentedButtonHoverBackgroundColor: rgb(0, 90, 143, 0.05);
+  --segmentedButtonHoverTextColor: var(--primary);
 
-	/* Segmented Select */
-  --segmentedButtonSelectedBackgroundColor: var(--primary);
-  --segmentedButtonSelectedTextColor: var(--primaryElementText);
+  --segmentedButtonSelectedBackgroundColor: var(--colorSecondaryDarken1);
+
+  --segmentedButtonSelectedBoxShadow: inset 0 3px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 5px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.067s ease-out;
+
+  --segmentedButtonSelectedTextColor: var(--colorWhite);
 
   /* 
     
@@ -586,13 +587,15 @@
 
   */
 
-  --pushbuttonBackgroundColor: none;
+  --pushbuttonBackgroundColor: var(--colorWhite);
   --pushbuttonBorderColor: var(--primary);
   --pushbuttonTextColor: var(--primary);
 
   --pushbuttonSelectedBackgroundColor: var(--colorNormal);
-  --pushbuttonSelectedBorderColor: var(--colorNormal);
-  --pushbuttonSelectedTextColor: var(--defaultText);
+  --pushbuttonSelectedBorderColor: #3dc100;
+  /* var(--colorNormal); */
+  --pushbuttonSelectedTextColor: #007300;
+  /* var(--colorWhite); */
 
   /* 
     
@@ -611,9 +614,9 @@
     ==========================================================================
  
   */
-	--modalTitleColor: var(--primaryElementText);
+
   --modalTextColor: var(--defaultText);
-  --modalBackgroundColor: var(--surfaceElements);
+  --modalBackgroundColor: var(--colorWhite);
   --modalBorderColor: var(--primary);
   /* 
     
@@ -800,7 +803,7 @@ li.light-theme {
     =========================================================================
 	*/
 
-	/* Astro 5 Simplified Colors */
+	/* KM Dark Palette Colors */
 	--backgroundColor: #101923;
 	--defaultText: #FFFFFF;
 	--secondaryText: #d4d8dd;
@@ -843,9 +846,9 @@ li.light-theme {
   */
 
   /* Button */
-  --buttonTextColor: var(--defaultText);
-  --buttonBackgroundColor: var(--primary);
-  --buttonBorderColor: var(--primary);
+  --buttonTextColor: var(--colorWhite);
+  --buttonBackgroundColor: var(--colorPrimary);
+  --buttonBorderColor: var(--colorPrimary);
   --buttonBoxShadow: 0 2px 4px rgba(0, 0, 0, 0.14),
     0 3px 4px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.2);
 
@@ -857,17 +860,17 @@ li.light-theme {
     0 3px 14px 3px rgba(0, 0, 0, 0.12), 0 4px 5px rgba(0, 0, 0, 0.2);
 
   /* Button Active State */
-  --buttonActiveControlTextColor: var(--defaultText);
-  --buttonActiveBackgroundColor: var(--primary);
-  --buttonActiveBorderColor: var(--primary);
+  --buttonActiveControlTextColor: var(--colorWhite);
+  --buttonActiveBackgroundColor: var(--colorPrimary);
+  --buttonActiveBorderColor: var(--colorPrimary);
 
   /* Default Button State */
-  --buttonDefaultBorderColor: var(--defaultText);
+  --buttonDefaultBorderColor: var(--colorWhite);
 
   /* Outline Button Variant */
-  --buttonOutlineTextColor: var(--defaultText);
+  --buttonOutlineTextColor: var(--colorWhite);
   --buttonOutlineBackgroundColor: transparent;
-  --buttonOutlineBorderColor: var(--primary);
+  --buttonOutlineBorderColor: var(--colorPrimary);
 
   /* Outline Button Variant Hover State */
   --buttonOutlineHoverTextColor: var(--primary);
@@ -881,17 +884,15 @@ li.light-theme {
     For checkboxes, radio buttons etc …
 
   */
-  --controlTextColor: var(--primary);
-  --controlLabelColor: var(--defaultText);
-  --controlBackgroundColor: var(--primary);
-  --controlBorderColor: var(--primary);
-  --controlAccentColor: var(--primary);
+  --controlTextColor: var(--colorWhite);
+  --controlLabelColor: var(--colorWhite);
+  --controlBackgroundColor: var(--colorPrimary);
+  --controlBorderColor: var(--colorSecondaryLighten1);
+  --controlAccentColor: var(--colorSecondaryLighten1);
 
-  --controlSelectedTextColor: var(--defaultText);
+  --controlSelectedTextColor: var(--colorWhite);
   --controlSelectedBackgroundColor: var(--primaryDark);
-	--controlSelectedBorderColor: var(--primary);
-	--controlHoverBorderColor: var(--primaryLight);
-	--controlSelectedOutlineBorderColor: var(--primary);
+  --controlSelectedBorderColor: var(--colorWhite);
 
   /* 
     
@@ -930,19 +931,22 @@ li.light-theme {
     ==========================================================================
 
   */
-  --segmentedButtonBorderColor: var(--primary);
-  --segmentedButtonBackgroundColor: none;
-  --segmentedButtonTextColor: var(--primary);
+  --segmentedButtonBorderColor: var(--colorTertiaryDarken1);
+  --segmentedButtonBackgroundColor: var(--colorPrimary);
+  --segmentedButtonTextColor: var(--colorWhite);
 
-	/* Segmented Hover */
-  --segmentedButtonHoverBackgroundColor: var(--primaryLight);
-	--segmentedButtonHoverTextColor: var(--primaryElementText);
-	--segmentedButtonHoverBorderColor: var(--primaryLight);
+  --segmentedButtonHoverBackgroundColor: var(
+    --primaryDark,
+    rgb(58, 135, 207)
+  );
+  --segmentedButtonHoverTextColor: var(--colorWhite);
 
-	/* Segmented Select */
-  --segmentedButtonSelectedBackgroundColor: var(--primary);
+  --segmentedButtonSelectedBackgroundColor: var(--primaryDark);
 
-  --segmentedButtonSelectedTextColor: var(--primaryElementText);
+  --segmentedButtonSelectedBoxShadow: inset 0 2px 4px rgba(0, 0, 0, 0.14),
+    inset 0 3px 4px rgba(0, 0, 0, 0.12), inset 0 1px 5px rgba(0, 0, 0, 0.2);
+
+  --segmentedButtonSelectedTextColor: var(--colorWhite);
 
   /* 
     
@@ -950,7 +954,7 @@ li.light-theme {
     ==========================================================================
     
   */
-  --selectBackgroundColor: var(--primary);
+  --selectBackgroundColor: var(--colorPrimary);
   --selectBorderColor: var(--colorPrimary);
   --selectTextColor: var(--colorWhite);
   --selectCaret: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M0%200h10L5%205z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
@@ -971,8 +975,8 @@ li.light-theme {
 
   /* Alt Toggle */
   /* --toggleThumbBorderColor: var(--colorGrayDarken2); */
-  --toggleThumbBorderColor: var(--defaultText);
-  --toggleThumbBackgroundColor: var(--defaultText);
+  --toggleThumbBorderColor: #fff;
+  --toggleThumbBackgroundColor: var(--colorWhite);
 
   --toggleTrackBorderColor: var(--colorGrayDarken2);
   --toggleTrackBackgroundColor: var(--colorGray);
@@ -995,17 +999,17 @@ li.light-theme {
     ==========================================================================
 
   */
-  --popupMenuBackgroundColor: var(--inputBackground);
+  --popupMenuBackgroundColor: var(--colorWhite);
   --popupMenuBorderColor: var(--primary);
-  --popupMenuTextColor: var(--primaryElementText);
+  --popupMenuTextColor: var(--colorBlack);
 
-  --popupCaretBackgroundColor: var(--primary);
+  --popupCaretBackgroundColor: var(--popupMenuBorderColor);
 
-  --popupMenuItemBackgroundColor: var(--primary);
-  --popupMenuItemHoverBackgroundColor: var(--primaryLight);
-  --popupMenuItemHoverTextColor: var(--primaryElementText);
+  --popupMenuItemBackgroundColor: var(--colorPrimary);
+  --popupMenuItemHoverBackgroundColor: var(--colorSecondaryLighten3);
+  --popupMenuItemHoverTextColor: var(--colorBlack);
 
-  --popupMenuItemSeperatorBorderColor: var(--primaryElementText);
+  --popupMenuItemSeperatorBorderColor: var(--colorQuaternaryDarken2);
 
   /* 
     
@@ -1013,13 +1017,13 @@ li.light-theme {
     ==========================================================================
 
   */
-  --pushbuttonBackgroundColor: none;
-  --pushbuttonBorderColor: var(--primary);
-  --pushbuttonTextColor: var(--primary);
+  --pushbuttonBackgroundColor: var(--colorPrimary);
+  --pushbuttonBorderColor: var(--colorBlack);
+  --pushbuttonTextColor: var(--colorWhite);
 
-  --pushbuttonSelectedBackgroundColor: var(--colorNormal);
-  --pushbuttonSelectedBorderColor: var(--colorNormal);
-  --pushbuttonSelectedTextColor: var(--primaryElementText);
+  --pushbuttonSelectedBackgroundColor: var(--colorBlack);
+  --pushbuttonSelectedBorderColor: var(--colorBlack);
+  --pushbuttonSelectedTextColor: var(--colorNormal);
 
   /* 
     
@@ -1037,7 +1041,7 @@ li.light-theme {
     ==========================================================================
 
   */
-	--modalTitleColor: var(--primaryElementText);
+
   --modalTextColor: var(--defaultText);
   --modalBackgroundColor: var(--surfaceElements);
   --modalBorderColor: var(--primary);
@@ -1218,8 +1222,7 @@ h1,
 h2,
 h3 {
 	font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-								Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-family: var(--fontFamily);
+	 Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 300;
   color: var(--defaultText);
   margin: 0 0 0.5rem 0;
@@ -1356,6 +1359,7 @@ body {
   font-family: var(--fontFamily);
   font-size: 1rem;
   color: var(--defaultText);
+
   background-color: var(--backgroundColor);
   scrollbar-color: var(--scrollBarThumbBackgroundColor) var(--scrollBarTrackCornerBackgroundColor);
 }
@@ -1699,10 +1703,13 @@ label {
 */
 
 .rux-checkbox,
-.rux-radio-button {
+.satcom-checkbox,
+.rux-radio-button,
+.satcom-radio-button {
   display: flex;
   position: relative;
   margin: 0 0 1rem 0;
+
   line-height: 1.2;
 
   /* DEBUG */
@@ -1720,24 +1727,32 @@ label {
 }
 
 .rux-checkbox input[type="checkbox"],
-.rux-radio-button input[type="radio"] {
+.satcom-checkbox input[type="checkbox"],
+.rux-radio-button input[type="radio"],
+.satcom-radio-button input[type="radio"] {
   -webkit-appearance: none;
   display: none;
 }
 
 .rux-checkbox input[type="checkbox"] + label,
-.rux-radio-button input[type="radio"] + label {
+.satcom-checkbox input[type="checkbox"] + label,
+.rux-radio-button input[type="radio"] + label,
+.satcom-radio-button input[type="radio"] + label {
   position: relative;
   display: flex;
 
   align-items: center;
   justify-content: flex-start;
 
-  color: var(--controlLabelColor);
+  color: rgb(255, 255, 255);
+
+  color: var(--controlLabelColor, rgb(255, 255, 255));
 }
 
 .rux-checkbox input[type="checkbox"] + label::before,
-.rux-radio-button input[type="radio"] + label::before {
+.satcom-checkbox input[type="checkbox"] + label::before,
+.rux-radio-button input[type="radio"] + label::before,
+.satcom-radio-button input[type="radio"] + label::before {
   display: flex;
   flex-shrink: 0;
   flex-grow: 0;
@@ -1747,73 +1762,89 @@ label {
 
   height: 1.25rem;
 
-  height: var(--controlOptionSize);
+  height: var(--controlOptionSize, 1.25rem);
   width: 1.25rem;
-  width: var(--controlOptionSize);
+  width: var(--controlOptionSize, 1.25rem);
 
   margin: 0 0.625rem 0 0;
 
-  border: 1px solid var(--controlBorderColor);
+  border: 1px solid rgb(122, 193, 255);
+
+  border: 1px solid var(--controlBorderColor, rgb(122, 193, 255));
 }
 
-.rux-checkbox input[type="checkbox"] + label::before {
+.rux-checkbox input[type="checkbox"] + label::before,
+.satcom-checkbox input[type="checkbox"] + label::before {
   border-radius: 2px;
 }
 
-.rux-radio-button input[type="radio"] + label::before {
+.rux-radio-button input[type="radio"] + label::before,
+.satcom-radio-button input[type="radio"] + label::before {
   border-radius: 100%;
   background-color: transparent;
 }
 
 .rux-checkbox input[type="checkbox"]:checked + label::before,
-.rux-radio-button input[type="radio"]:checked + label::before {
-  background-color: var(--controlSelectedOutlineBackgroundColor);
-  border-color: var(--controlSelectedOutlineBorderColor);
-}
-
-.rux-checkbox input[type="checkbox"]:hover + label::before,
-.rux-radio-button input[type="radio"]:hover + label::before {
-	border-color: var(--controlHoverBorderColor);
-}
-
-.rux-checkbox input[type="checkbox"]:checked:hover + label::before,
-.rux-radio-button input[type="radio"]:checked:hover + label::before {
-	border-color: var(--controlSelectedBorderColor);
+.satcom-checkbox input[type="checkbox"]:checked + label::before,
+.rux-radio-button input[type="radio"]:checked + label::before,
+.satcom-radio-button input[type="radio"]:checked + label::before {
+  background-color: rgb(58, 129, 191)
+  ;
+  background-color: var(
+    --controlSelectedOutlineBackgroundColor,
+    rgb(58, 129, 191)
+  );
+  border-color: rgb(255, 255, 255);
+  border-color: var(--controlSelectedOutlineBorderColor, rgb(255, 255, 255));
 }
 
 .rux-checkbox input[type="checkbox"]:checked + label::after,
-.rux-radio-button input[type="radio"]:checked + label::after{
+.satcom-checkbox input[type="checkbox"]:checked + label::after,
+.rux-radio-button input[type="radio"]:checked + label::after,
+.satcom-radio-button input[type="radio"]:checked + label::after {
   position: absolute;
   top: 5px;
   display: flex;
+
   content: "";
 }
 
-.rux-checkbox input[type="checkbox"]:checked + label::after{
+.rux-checkbox input[type="checkbox"]:checked + label::after,
+.satcom-checkbox input[type="checkbox"]:checked + label::after {
   height: 6px;
   width: 12px;
   left: 4px;
-  border-right: 2px solid var(--controlTextColor);
-  border-top: 2px solid var(--controlTextColor);
+  border-right: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid var(--controlTextColor, rgb(255, 255, 255));
+  border-top: 2px solid rgb(255, 255, 255);
+  border-top: 2px solid var(--controlTextColor, rgb(255, 255, 255));
+
   transform: rotate(125deg);
 }
 
-.rux-radio-button input[type="radio"]:checked + label::after {
+.rux-radio-button input[type="radio"]:checked + label::after,
+.satcom-radio-button input[type="radio"]:checked + label::after {
   left: 5px;
+
   height: 10px;
   width: 10px;
+
   border-radius: 100%;
   /* box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.9); */
 
-  background-color: var(--primary);
+  background-color: rgb(255, 255, 255);
+
+  background-color: var(--controlTextColor, rgb(255, 255, 255));
 }
 
 .rux-checkbox input[type="checkbox"]:disabled + label,
-.rux-radio-button input[type="radio"]:disabled + label {
+.satcom-checkbox input[type="checkbox"]:disabled + label,
+.rux-radio-button input[type="radio"]:disabled + label,
+.satcom-radio-button input[type="radio"]:disabled + label {
   cursor: not-allowed;
-  cursor: var(--disabledCursor);
+  cursor: var(--disabledCursor, not-allowed);
   opacity: 0.4;
-  opacity: var(--disabledOpacity);
+  opacity: var(--disabledOpacity, 0.4);
 }
 
 /*

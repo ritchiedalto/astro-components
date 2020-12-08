@@ -9,8 +9,9 @@
 */
 
 /* 	REQUIRED CLASSES */
-.rux-pop-up {
-  font-size: 1rem;
+.rux-pop-up,
+.satcom-pop-up {
+  font-size: 0.875rem;
   display: inline-block;
 
   margin: 1em;
@@ -23,13 +24,14 @@
   border-radius: 3px;
 }
 
-.rux-pop-up ul {
+.rux-pop-up ul,
+.satcom-pop-up ul {
   position: relative;
   list-style: none;
   padding: 0;
   margin: 0;
   background: none;
-  background-color: var(--colorWhite);
+  background-color: #fff;
   border-radius: 2px;
 
   z-index: 2;
@@ -40,37 +42,42 @@
   border-bottom: 1px solid #f0f1f3;
 } */
 
-.rux-pop-up a {
+.rux-pop-up a,
+.satcom-pop-up a {
   display: block;
   padding: 0.5em;
-  color: var(--popupMenuTextColor);
+  color: #000;
   text-decoration: none;
 
   min-width: 15em;
   max-width: 20em;
 }
 
-.rux-pop-up a:hover,.rux-pop-up li:hover {
-	background-color: var(--colorSecondaryLighten3);
-	color: var(--popupMenuItemHoverTextColor);
+.rux-pop-up a:hover,
+.satcom-pop-up a:hover {
+  background-color: var(--colorSecondaryLighten3);
 }
 
-.rux-pop-up li:first-child a {
+.rux-pop-up li:first-child a,
+.satcom-pop-up li:first-child a {
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
 }
 
-.rux-pop-up li:last-child a {
+.rux-pop-up li:last-child a,
+.satcom-pop-up li:last-child a {
   border: none;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
 }
 
-.rux-pop-up--top {
+.rux-pop-up--top,
+.satcom-pop-up-top {
   border-top: 3px solid var(--colorSecondary);
 }
 
-.rux-pop-up--top::before {
+.rux-pop-up--top::before,
+.satcom-pop-up-top::before {
   content: "";
   display: block;
   position: absolute;
@@ -85,11 +92,13 @@
   transform: rotate(45deg);
 }
 
-.rux-pop-up--bottom{
+.rux-pop-up--bottom,
+.satcom-pop-up-bottom {
   border-bottom: 3px solid var(--colorSecondary);
 }
 
-.rux-pop-up--bottom::after {
+.rux-pop-up--bottom::after,
+.satcom-pop-up-bottom::after {
   content: "";
   display: block;
   position: absolute;
@@ -104,11 +113,13 @@
   transform: rotate(45deg);
 }
 
-.rux-pop-up--left {
+.rux-pop-up--left,
+.satcom-pop-up-left {
   border-left: 3px solid var(--colorSecondary);
 }
 
-.rux-pop-up--left::before {
+.rux-pop-up--left::before,
+.satcom-pop-up-left::before {
   content: "";
   display: block;
   position: absolute;
@@ -123,11 +134,13 @@
   transform: rotate(45deg);
 }
 
-.rux-pop-up--right {
+.rux-pop-up--right,
+.satcom-pop-up-right {
   border-right: 3px solid var(--colorSecondary);
 }
 
-.rux-pop-up--right::before{
+.rux-pop-up--right::before,
+.satcom-pop-up-right::before {
   content: "";
   display: block;
   position: absolute;

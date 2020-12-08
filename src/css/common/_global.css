@@ -27,6 +27,7 @@ body {
   font-family: var(--fontFamily);
   font-size: 1rem;
   color: var(--defaultText);
+
   background-color: var(--backgroundColor);
   scrollbar-color: var(--scrollBarThumbBackgroundColor) var(--scrollBarTrackCornerBackgroundColor);
 }

@@ -5,7 +5,7 @@
     ==========================================================================
 	*/
 	
-	/* Astro 5 Simplified Color Palette */
+	/* KM Light Palette Colors */
 	--backgroundColor: #eaeef4;
 	--defaultText: #292A2D;
 	--secondaryText: #51555B;
@@ -60,7 +60,7 @@
     0 3px 14px 3px rgba(0, 0, 0, 0.12), 0 4px 5px rgba(0, 0, 0, 0.2);
 
   /* Button Active State */
-  --buttonActiveControlTextColor: var(--defaultText);
+  --buttonActiveControlTextColor: var(--colorWhite);
   --buttonActiveBackgroundColor: var(--primary);
   --buttonActiveBorderColor: var(--primary);
 
@@ -84,20 +84,19 @@
     For checkboxes, radio buttons etc …
 
   */
-  --controlTextColor: var(--primary);
-  --controlLabelColor: var(--defaultText);
-  --controlBackgroundColor: var(--primary);
+  --controlTextColor: var(--colorWhite);
+  --controlLabelColor: var(--colorBlack);
+  --controlBackgroundColor: var(--colorSecondaryDarken1);
   --controlBorderColor: var(--primary);
-  --controlAccentColor: var(--primary);
+  --controlAccentColor: var(--colorSecondary);
 
-  --controlSelectedTextColor: var(--defaultText);
-  --controlSelectedBackgroundColor: transparent;
+  --controlSelectedTextColor: var(--colorBlack);
+  --controlSelectedBackgroundColor: var(--colorSecondaryDarken1);
   --controlSelectedBorderColor: var(--primary);
 
-	--controlHoverOutlineBackgroundColor: none;
-	--controlHoverBorderColor: var(--primaryDark);
+  --controlHoverOutlineBackgroundColor: none;
   --controlSelectedOutlineBorderColor: var(--primary);
-  --controlSelectedOutlineBackgroundColor: none;
+  --controlSelectedOutlineBackgroundColor: var(--colorSecondaryDarken1);
 
   /* 
     
@@ -117,17 +116,17 @@
     ==========================================================================
 
   */
-  --popupMenuBackgroundColor: var(--inputBackground);
-  --popupMenuBorderColor: var(--primary);
-  --popupMenuTextColor: var(--defaultText);
+  --popupMenuBackgroundColor: var(--colorWhite);
+  --popupMenuBorderColor: var(--colorSecondary);
+  --popupMenuTextColor: var(--colorBlack);
 
-  --popupCaretBackgroundColor: var(--primary);
+  --popupCaretBackgroundColor: var(--popupMenuBorderColor);
 
-  --popupMenuItemBackgroundColor: var(--inputBackground);
-  --popupMenuItemHoverBackgroundColor: var(--primaryDark);
-  --popupMenuItemHoverTextColor: var(--primaryElementText);
+  --popupMenuItemBackgroundColor: var(--primary);
+  --popupMenuItemHoverBackgroundColor: var(--colorSecondaryLighten3);
+  --popupMenuItemHoverTextColor: var(--colorBlack);
 
-  --popupMenuItemSeperatorBorderColor: var(--defaultText);
+  --popupMenuItemSeperatorBorderColor: var(--colorQuaternaryDarken2);
 
   /* 
     
@@ -155,17 +154,19 @@
 
   */
   --segmentedButtonBorderColor: var(--primary);
-  --segmentedButtonBackgroundColor: none;
+  --segmentedButtonBackgroundColor: var(--colorWhite);
   --segmentedButtonTextColor: var(--primary);
 
-	/* Segmented Hover */
-  --segmentedButtonHoverBackgroundColor: var(--primaryDark);
-	--segmentedButtonHoverTextColor: var(--primaryElementText);
-	--segmentedButtonHoverBorderColor: var(--primaryDark);
+  --segmentedButtonHoverBackgroundColor: rgb(0, 90, 143, 0.05);
+  --segmentedButtonHoverTextColor: var(--primary);
 
-	/* Segmented Select */
-  --segmentedButtonSelectedBackgroundColor: var(--primary);
-  --segmentedButtonSelectedTextColor: var(--primaryElementText);
+  --segmentedButtonSelectedBackgroundColor: var(--colorSecondaryDarken1);
+
+  --segmentedButtonSelectedBoxShadow: inset 0 3px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 5px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.067s ease-out;
+
+  --segmentedButtonSelectedTextColor: var(--colorWhite);
 
   /* 
     
@@ -225,13 +226,15 @@
 
   */
 
-  --pushbuttonBackgroundColor: none;
+  --pushbuttonBackgroundColor: var(--colorWhite);
   --pushbuttonBorderColor: var(--primary);
   --pushbuttonTextColor: var(--primary);
 
   --pushbuttonSelectedBackgroundColor: var(--colorNormal);
-  --pushbuttonSelectedBorderColor: var(--colorNormal);
-  --pushbuttonSelectedTextColor: var(--defaultText);
+  --pushbuttonSelectedBorderColor: #3dc100;
+  /* var(--colorNormal); */
+  --pushbuttonSelectedTextColor: #007300;
+  /* var(--colorWhite); */
 
   /* 
     
@@ -250,9 +253,9 @@
     ==========================================================================
  
   */
-	--modalTitleColor: var(--primaryElementText);
+
   --modalTextColor: var(--defaultText);
-  --modalBackgroundColor: var(--surfaceElements);
+  --modalBackgroundColor: var(--colorWhite);
   --modalBorderColor: var(--primary);
   /* 
     
