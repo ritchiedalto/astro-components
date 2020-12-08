@@ -163,7 +163,7 @@ export class RuxModal extends LitElement {
           line-height: 1.2;
           padding: 0;
           margin: 0;
-          color: #fff !important;
+          color: var(--modalTitleColor);
         }
 
         .rux-modal__content {
@@ -171,7 +171,7 @@ export class RuxModal extends LitElement {
           flex-direction: column;
           flex-grow: 1;
           padding: 1rem;
-          color: var(--fontColor, #fff);
+          color: var(--defaultText);
         }
 
         rux-icon {

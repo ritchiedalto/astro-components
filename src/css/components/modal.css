@@ -42,7 +42,7 @@
   margin: 0;
   line-height: 1.2;
 
-  color: rgb(255, 255, 255) !important;
+  color: var(--modalTitleColor);
 }
 
 .rux-modal__content {
@@ -51,7 +51,7 @@
   flex-direction: column;
   flex-grow: 1;
   padding: 1rem;
-  color: var(--fontColor, rgb(255, 255, 255));
+  color: var(--defaultText);
 }
 
 .rux-button-group {

@@ -198,7 +198,7 @@ export class RuxPopUpMenu extends LitElement {
         --transitionSpeed: 0.1667s;
 
         opacity: 0;
-        font-size: 0.875rem;
+        font-size: 1rem;
 
         margin: 0;
         padding: 0;
@@ -285,6 +285,7 @@ export class RuxPopUpMenu extends LitElement {
 
       li:not([role='seperator']):hover {
         background-color: var(--popupMenuItemHoverBackgroundColor);
+				color: var(--popupMenuItemHoverTextColor);
       }
 
       :host(.from-top) {
