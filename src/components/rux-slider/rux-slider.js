@@ -267,7 +267,19 @@ export class RuxSlider extends LitElement {
         .rux-range:disabled::-ms-thumb {
           opacity: 0.4;
           cursor: not-allowed;
-        }
+				}
+				
+				.rux-range:not(:disabled)::-webkit-slider-thumb:active {
+					border-color: var(--sliderSelectedThumbBorderColor);
+					background-color: var(--inputBackground);
+					box-shadow: var(--thumbShadowActive);
+				}
+				
+				.rux-range:not(:disabled)::-webkit-slider-thumb:focus,
+				.rux-range:not(:disabled)::-webkit-slider-thumb:hover:not(:active) {
+					background-color: var(--sliderHoverThumbBackgroundColor);
+					box-shadow: var(--thumbShadowHover);
+				}
 
         .rux-slider__control__labels {
           position: relative;
