@@ -119,8 +119,8 @@ export class RuxSlider extends LitElement {
           align-items: center;
 
           /* width: 100%; */
-          height: var(--trackHeight, 2px);
-          cursor: var(--trackCursor, pointer);
+          height: var(--trackHeight);
+          cursor: var(--trackCursor);
 
           background-color: var(--sliderTrackBackgroundColor);
           outline: 1px solid var(--sliderTrackBorderColor);
@@ -167,7 +167,7 @@ export class RuxSlider extends LitElement {
           color: transparent;
           background-color: transparent;
           border: none;
-          /* background-color: var(--sliderTrackBackgroundColor); */
+          background-color: var(--sliderTrackBackgroundColor);
           outline: 1px solid transparent;
         }
 
@@ -190,11 +190,15 @@ export class RuxSlider extends LitElement {
           width: var(--thumbSize);
 
           border-radius: 100%;
-          border: 1px solid var(--sliderThumbBorderColor);
+          border: var(--borderThumbSize) solid var(--sliderThumbBorderColor);
           background-color: var(--sliderThumbBackgroundColor);
 
           cursor: pointer;
           box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.9), var(--thumbShadow);
+				}
+
+        .rux-range::-webkit-slider-thumb:hover{
+         border-color: var(--sliderHoverThumbBorderColor);
         }
 
         .rux-range:disabled::-webkit-slider-runnable-track {
@@ -214,7 +218,7 @@ export class RuxSlider extends LitElement {
 
         .rux-range:not(:disabled)::-webkit-slider-thumb:focus,
         .rux-range:not(:disabled)::-webkit-slider-thumb:hover:not(:active) {
-					background-color: var(--sliderHoverThumbBackgroundColor);					
+        	background-color: var(--sliderHoverThumbBackgroundColor);					
         }
 
         .rux-range::-moz-range-thumb {
@@ -231,6 +235,10 @@ export class RuxSlider extends LitElement {
 
           cursor: pointer;
           box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.9), var(--thumbShadow);
+				}
+				
+        .rux-range::-moz-range-thumb:hover{
+          border-color:var(--sliderHoverThumbBorderColor);
         }
 
         input:-moz-focusring {
@@ -270,9 +278,9 @@ export class RuxSlider extends LitElement {
           padding: 0 0.1rem;
           margin: 0.5em 0 0 0;
 
-          color: var(--fontColor, #fff);
+          color: var(--fontColor);
           font-size: 0.875rem;
-          font-family: var(--fontFamilyMono);
+          font-family: var(--fontFamily);
         }
 
         .rux-slider__control__labels li {

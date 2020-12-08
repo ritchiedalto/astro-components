@@ -497,15 +497,17 @@
 
   */
   --sliderThumbBackgroundColor: var(--primaryDark);
-	--sliderThumbBorderColor: var(--inputBackground);
+  --sliderThumbBorderColor: var(--inputBackground);
 	--sliderHoverThumbBackgroundColor: var(--primaryDark);
-	--sliderActiveThumbBackgroundColor: var(--inputBackground);
-	--sliderActiveThumbBorderColor: var(--inputBackground);
+	--sliderHoverThumbBorderColor: var(--inputBackground);
 
   --sliderTrackBorderColor: var(--secondaryText);
-  --sliderTrackBackgroundColor: transparent;
-	
-  --sliderSelectedTrackBackgroundColor: var(--primary);
+  --sliderTrackBackgroundColor: var(--inputBackground);
+
+	--sliderSelectedThumbBorderColor: var(--primaryLight);
+	--sliderSelectedTrackBackgroundColor: var(--primary);
+
+	--borderThumbSize: .25px;
 
   /* 
     
@@ -909,17 +911,18 @@ li.light-theme {
     ==========================================================================
 
   */
-  --sliderThumbBackgroundColor: var(--primary);
-	--sliderThumbBorderColor: var(--inputBackground);
-	--sliderHoverThumbBackgroundColor: var(--primary);
-	--sliderActiveThumbBackgroundColor: var(--inputBackground);
-	--sliderActiveThumbBorderColor: var(--inputBackground);
-	
-	--sliderTrackBorderColor: transparent;
+  --sliderThumbBackgroundColor: var(--primaryDark);
+  --sliderThumbBorderColor: var(--inputBackground);
+	--sliderHoverThumbBackgroundColor: var(--primaryDark);
+	--sliderHoverThumbBorderColor: var(--inputBackground);
+
+  --sliderTrackBorderColor: transparent;
   --sliderTrackBackgroundColor: var(--secondaryText);
 
-  
-  --sliderSelectedTrackBackgroundColor: var(--primary);
+	--sliderSelectedThumbBorderColor: var(--primaryLight);
+	--sliderSelectedTrackBackgroundColor: var(--primary);
+
+	--borderThumbSize: 1px;
 
   /* 
     

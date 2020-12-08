@@ -116,17 +116,18 @@
     ==========================================================================
 
   */
-  --sliderThumbBackgroundColor: var(--primary);
-	--sliderThumbBorderColor: var(--inputBackground);
-	--sliderHoverThumbBackgroundColor: var(--primary);
-	--sliderActiveThumbBackgroundColor: var(--inputBackground);
-	--sliderActiveThumbBorderColor: var(--inputBackground);
-	
-	--sliderTrackBorderColor: transparent;
+  --sliderThumbBackgroundColor: var(--primaryDark);
+  --sliderThumbBorderColor: var(--inputBackground);
+	--sliderHoverThumbBackgroundColor: var(--primaryDark);
+	--sliderHoverThumbBorderColor: var(--inputBackground);
+
+  --sliderTrackBorderColor: transparent;
   --sliderTrackBackgroundColor: var(--secondaryText);
 
-  
-  --sliderSelectedTrackBackgroundColor: var(--primary);
+	--sliderSelectedThumbBorderColor: var(--primaryLight);
+	--sliderSelectedTrackBackgroundColor: var(--primary);
+
+	--borderThumbSize: 1px;
 
   /* 
     
